@@ -7,9 +7,9 @@ steps:
   args:
   - set
   - image
-  - 'deployment/DevOpscloud'
-  - [DEPLOYMENT-NAME]
-  - [CONTAINER]=gcr.io/${PROJECT-ID}/${IMAGE}:${COMMIT_SHA}'
+  - deployment'
+  - deployment-name=devops'
+  - 'container=gcr.io/${PROJECT-ID}/${IMAGE}:${COMMIT_SHA}'
   env:
   - 'CLOUDSDK_COMPUTE_ZONE=${_CLOUDSDK_COMPUTE_ZONE}'
   - 'CLOUDSDK_CONTAINER_CLUSTER=${_CLOUDSDK_CONTAINER_CLUSTER}'
