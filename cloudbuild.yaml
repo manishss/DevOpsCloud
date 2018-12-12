@@ -9,7 +9,7 @@ steps:
   - image
   - deployment
   - 'deployment-name=devops-1'
-  - 'container=gcr.io/${PROJECT-ID}/${_SERVICE_NAME}:${COMMIT_SHA}'
+  - 'container=gcr.io/${PROJECT_ID}/${_SERVICE_NAME}:${COMMIT_SHA}'
   env:
   - 'CLOUDSDK_COMPUTE_ZONE=${_CLOUDSDK_COMPUTE_ZONE}'
   - 'CLOUDSDK_CONTAINER_CLUSTER=${_CLOUDSDK_CONTAINER_CLUSTER}'
