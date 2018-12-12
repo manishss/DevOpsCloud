@@ -7,7 +7,7 @@ steps:
   args:
   - set
   - image
-  - deployment
+  - 'deployment/DevOpscloud'
   - [DEPLOYMENT-NAME]
   - [CONTAINER]=gcr.io/${PROJECT-ID}/${IMAGE}:${COMMIT_SHA}'
   env:
