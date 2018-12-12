@@ -8,7 +8,7 @@ steps:
   - set
   - image
   - 'deployment/devops-1'
-  - '${_CLOUDSDK_CONTAINER_CLUSTER}=gcr.io/${PROJECT_ID}/${_SERVICE_NAME}:${COMMIT_SHA}'
+  - 'nginx=gcr.io/${PROJECT_ID}/${_SERVICE_NAME}:${COMMIT_SHA}'
   env:
   - 'CLOUDSDK_COMPUTE_ZONE=${_CLOUDSDK_COMPUTE_ZONE}'
   - 'CLOUDSDK_CONTAINER_CLUSTER=${_CLOUDSDK_CONTAINER_CLUSTER}'
