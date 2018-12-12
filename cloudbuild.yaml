@@ -7,8 +7,8 @@ steps:
   args:
   - set
   - image
-  - deployment'
-  - deployment-name=devops'
+  - deployment
+  - 'deployment-name=devops-1'
   - 'container=gcr.io/${PROJECT-ID}/${IMAGE}:${COMMIT_SHA}'
   env:
   - 'CLOUDSDK_COMPUTE_ZONE=${_CLOUDSDK_COMPUTE_ZONE}'
