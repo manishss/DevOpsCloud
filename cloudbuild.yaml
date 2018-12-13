@@ -1,6 +1,6 @@
 steps:
 - name: 'gcr.io/alert-study-225308/github.com/manishss/devops:8f5ffb7b93cefc804501fbd324c63772e6d1d967'
-  args: ["sonar-scanner", "Dsonar.host.url=http://35.232.253.228", "-Dsonar.login=${_LOGIN}", "-Dsonar.password=${_PASS}"]
+  args: ['sonar-scanner', '-Dsonar.host.url=http://35.232.253.228', -Dsonar.login=${_LOGIN}', -Dsonar.password=${_PASS}']
 - name: 'gcr.io/cloud-builders/docker'
   args: ["build", "-t", "gcr.io/${PROJECT_ID}/${_SERVICE_NAME}", "."]
 - name: 'gcr.io/cloud-builders/docker'
